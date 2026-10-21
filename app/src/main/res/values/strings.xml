@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Speech Practice</string>
+    <string name="response_hint">Type or edit your response</string>
+    <string name="prompt_counter">Prompt %1$d of %2$d</string>
+    <string name="picture_description">Picture prompt: %1$s</string>
+    <string name="picture_fallback">Local picture prompt</string>
+    <string name="session_summary">Presented: %1$d prompts\nSpeech attempts started: %2$d\nTranscriptions returned: %3$d\nSkipped: %4$d\nRecognition errors: %5$d\n\nThese are software observations from this session, not a clinical score.</string>
+</resources>

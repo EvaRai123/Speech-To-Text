@@ -1,0 +1,36 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Signing keys and private credentials
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+secrets.properties
+credentials.properties
+
+# Audio, exports, and research data
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.3gp
+/recordings/
+/audio/
+/patient-data/
+/research-data/
+
+# Local environment and generated reports
+.env
+.env.*
+captures/
+reports/
