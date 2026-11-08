@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Safety and Limitations"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="SpeechBridge is a research prototype. It should be used as an educational and engineering support tool rather than as a diagnostic or treatment system."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="SpeechBridge is an engineering prototype. It is not a clinically validated medical device. It does not diagnose dysarthria, replace a speech-language pathologist or prescribe medical treatment. It does not directly measure vocal-fold movement, and it does not automatically determine speech intelligibility or guarantee clinical improvement.\n\nAccelerometer readings do not directly measure vocal-fold motion. Surface EMG does not directly measure intrinsic vocal-fold muscle activity. Greater EMG amplitude does not automatically indicate better phonation. Sensor placement, skin condition, motion artefacts and electrode quality can all affect measurements.\n\nUsers should not force the voice or continue practicing if the task is uncomfortable. Appropriate professional guidance remains important, especially when working with speech or voice changes after stroke. Electrical safety is essential for any electrode-based measurement system and the design must continue to prioritise safe, isolated electronics and correct usage."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/safety_learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Back to Learn"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

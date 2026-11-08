@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Session review" android:textColor="@color/ink" android:textSize="30sp" android:textStyle="bold" />
+        <TextView android:id="@+id/session_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="@color/teal" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Patient profile" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:text="No patient profile, diagnosis, or clinician-entered information is attached to this session. A pseudonymous profile system has not been configured." android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Session overview" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:id="@+id/session_overview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Individual prompt results" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <LinearLayout android:id="@+id/prompt_results_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Data quality and limitations" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:id="@+id/data_quality" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Audio measurements" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:text="Not collected for this session. The current practice flow uses Android SpeechRecognizer, while the new AudioRecord measurement layer is kept separate until a single-capture transcription path is validated. No waveform, pitch, loudness, or speech-activity value is inferred from recognition callbacks." android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Longitudinal progress" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:id="@+id/history_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Clinical context and points to discuss" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:text="No clinician-confirmed context or clinician-entered observations are available. Recognition outcomes are not diagnoses or measures of neurological severity." android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Recovery or therapy plan" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:text="No clinician-approved plan recorded." android:textColor="@color/ink" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Future AI-assisted observations" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/card_background" android:padding="16dp" android:text="No AI service is connected. Future observations would require validated saved measurements and clinician oversight." android:textColor="@color/ink" android:textSize="16sp" />
+
+        <Button android:id="@+id/review_new_session_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:minHeight="54dp" android:text="Start another session" android:textAllCaps="false" />
+        <Button android:id="@+id/review_home_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Return home" android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Research workspace"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Research inspection for saved measurements. This prototype does not connect accelerometer or sEMG hardware, and does not infer a combined score."
+            android:textColor="@color/teal"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/wearable_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:text="Wearable: not configured. Accelerometer and sEMG are unavailable until a compatible device reports valid sensor status."
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/wearable_scan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:text="Scan for SpeechBridge wearable"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:accessibilityHeading="true"
+            android:text="Measurement channels"
+            android:textColor="@color/ink"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/card_research_audio" />
+        <include layout="@layout/card_research_camera" />
+        <include layout="@layout/card_research_accelerometer" />
+        <include layout="@layout/card_research_semg" />
+
+        <TextView
+            android:id="@+id/research_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:text="Saved audio and camera measurements will appear here. Raw audio and video are not retained."
+            android:textColor="@color/ink"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/research_baseline_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Create/update baselines from compatible saved attempts"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/research_baseline_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:text="Baselines require repeated valid measurements and an explicitly saved matching source configuration."
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Channel ablation across equivalent saved attempts"
+            android:textColor="@color/ink"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ablation_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:checked="true"
+            android:text="Audio" />
+
+        <CheckBox
+            android:id="@+id/ablation_accelerometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Neck accelerometer" />
+
+        <CheckBox
+            android:id="@+id/ablation_semg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Surface EMG" />
+
+        <CheckBox
+            android:id="@+id/ablation_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Front camera" />
+
+        <Button
+            android:id="@+id/research_ablation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare selected channels"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/research_ablation_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:text="Ablation results retain individual channel measurements."
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Optional self-reported comfort"
+            android:textColor="@color/ink"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/research_user_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/research_report_unknown">
+
+            <RadioButton
+                android:id="@+id/research_report_unknown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not reported" />
+
+            <RadioButton
+                android:id="@+id/research_report_comfortable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comfortable" />
+
+            <RadioButton
+                android:id="@+id/research_report_difficult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficult" />
+
+            <RadioButton
+                android:id="@+id/research_report_discomfort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discomfort" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/research_recommendation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show optional next-step suggestion"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/research_recommendation_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:text="No suggestion is made until the user chooses a comfort report."
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/research_condition_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="A: Microphone only"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/research_condition_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="B: Microphone + accelerometer"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/research_condition_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="C: Microphone + accelerometer + sEMG"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Saved research sessions"
+            android:textColor="@color/ink"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/research_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:text="No research sessions have been saved yet."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/research_export_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Export measurement CSV"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/research_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Back to home"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

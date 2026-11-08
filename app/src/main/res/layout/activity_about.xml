@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About SpeechBridge"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="A person using a speaking practice app"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_speaking" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_background"
+            android:lineSpacingExtra="4dp"
+            android:padding="18dp"
+            android:text="SpeechBridge offers simple, guided speaking practice and a place to review your own recordings.\n\nThe project is also exploring whether extra sensors could describe voice practice. The app is a research prototype, not a medical treatment or diagnosis."
+            android:textColor="@color/ink"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="What happens to my voice recording?"
+            android:textColor="@color/ink"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:lineSpacingExtra="3dp"
+            android:padding="16dp"
+            android:text="The microphone is used after you choose to record and grant permission. The app examines the captured sound on this phone. Its estimates can change with phone position, settings, and background noise. It does not score pronunciation or show whether a health condition has improved."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="The planned wearable"
+            android:textColor="@color/ink"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:contentDescription="A planned neck-worn sensor"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_wearable" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:lineSpacingExtra="3dp"
+            android:padding="16dp"
+            android:text="A future neck-worn device may include a vibration sensor and skin electrodes that detect small muscle signals. No wearable data is connected in this app version, so those readings are not available."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_background"
+            android:lineSpacingExtra="3dp"
+            android:padding="16dp"
+            android:text="Research project title\nSpeechBridge: A Multimodal Wearable Biofeedback System for Personalised Phonation Practice in Post-Stroke Dysarthria."
+            android:textColor="@color/ink"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/about_learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="54dp"
+            android:text="Learn how speaking works"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/about_safety_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Safety and limits"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/about_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Back"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

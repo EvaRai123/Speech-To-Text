@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="About dysarthria"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="A person speaking"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_speaking" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="Dysarthria can make speaking harder to control. A stroke can affect the muscles used for speech. It does not affect everyone in the same way."
+            android:textColor="@color/ink"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:accessibilityHeading="true"
+            android:text="What might change?"
+            android:textColor="@color/ink"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/card_dysarthria_unclear" />
+        <include layout="@layout/card_dysarthria_slow" />
+        <include layout="@layout/card_dysarthria_voice" />
+        <include layout="@layout/card_dysarthria_rhythm" />
+        <include layout="@layout/card_dysarthria_movement" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:accessibilityHeading="true"
+            android:text="Why can this happen?"
+            android:textColor="@color/ink"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:contentDescription="A simple picture showing a signal going from the brain to the speaking muscles"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_brain_speech" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="The brain sends messages to the muscles that help us speak. A stroke can change these messages. Each person may have different changes."
+            android:textColor="@color/ink"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:accessibilityHeading="true"
+            android:text="Can practice help?"
+            android:textColor="@color/ink"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="Speech practice may be one part of rehabilitation. It does not promise a change. A speech therapist or health professional can help choose what is right for you."
+            android:textColor="@color/ink"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:accessibilityHeading="true"
+            android:text="How SpeechBridge works"
+            android:textColor="@color/ink"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/card_channel_microphone" />
+        <include layout="@layout/card_channel_neck" />
+        <include layout="@layout/card_channel_semg" />
+        <include layout="@layout/card_channel_camera" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:accessibilityHeading="true"
+            android:text="What the app cannot do"
+            android:textColor="@color/ink"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="SpeechBridge cannot diagnose or replace a speech therapist. A camera cannot see your tongue inside your mouth. A sensor cannot prove that speech is correct. Results can change with device setup and signal quality."
+            android:textColor="@color/ink"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/dysarthria_learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:minHeight="54dp"
+            android:text="Back to Learn"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

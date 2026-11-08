@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to SpeechBridge!"
+            android:textColor="@color/ink"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="A person speaking"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_speaking" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_background"
+            android:lineSpacingExtra="4dp"
+            android:padding="20dp"
+            android:text="Practise speaking through simple, guided activities.\n\nLearn at your own pace."
+            android:textColor="@color/ink"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/welcome_start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:minHeight="56dp"
+            android:text="Let's get started"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

@@ -8,52 +8,193 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="28dp">
+        android:padding="22dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Speech Practice"
+            android:accessibilityHeading="true"
+            android:text="@string/speechbridge_title"
             android:textColor="@color/ink"
             android:textSize="34sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Picture-based speech practice"
-            android:textColor="@color/teal"
-            android:textSize="18sp" />
+            android:layout_marginTop="6dp"
+            android:text="Small steps. Your pace."
+            android:textColor="@color/purple"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="Take a calm moment to name familiar pictures. You can speak, type your response, or move on whenever you need."
+            android:layout_marginTop="2dp"
+            android:text="Choose one thing to do."
             android:textColor="@color/ink"
-            android:textSize="19sp"
-            android:lineSpacingExtra="4dp" />
+            android:textSize="19sp" />
 
         <TextView
+            android:id="@+id/home_progress_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_background"
+            android:padding="14dp"
+            android:text="Your lesson progress will appear here."
+            android:textColor="@color/ink"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="A person speaking and making a voice sound"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_speaking" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:contentDescription="Lessons"
+                android:src="@drawable/ic_lessons" />
+
+            <Button
+                android:id="@+id/curriculum_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="72dp"
+                android:text="My Lessons\nChoose one short activity."
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:contentDescription="Practice"
+                android:src="@drawable/ic_practice" />
+
+            <Button
+                android:id="@+id/start_practice_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="72dp"
+                android:text="Practise\nTry a voice activity."
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:contentDescription="Progress"
+                android:src="@drawable/ic_progress" />
+
+            <Button
+                android:id="@+id/view_progress_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="72dp"
+                android:text="My Progress\nSee the lessons you tried."
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:contentDescription="About SpeechBridge"
+                android:src="@drawable/ic_about" />
+
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="72dp"
+                android:text="About SpeechBridge\nLearn what this app can do."
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/learn_illustration_description"
+                android:src="@drawable/illustration_book" />
+
+            <Button
+                android:id="@+id/learn_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="72dp"
+                android:text="Learn about speech\nOpen short picture cards."
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/research_workspace_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="@drawable/card_background"
-            android:padding="20dp"
-            android:text="This is a student-built technical prototype. Speech recognition depends on your device and installed recognition service."
-            android:textColor="@color/ink"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/start_practice_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:minHeight="56dp"
-            android:text="Start practice"
+            android:backgroundTint="@color/soft_purple"
+            android:minHeight="48dp"
+            android:text="Research Lab"
             android:textAllCaps="false"
-            android:textSize="18sp" />
+            android:textColor="@color/ink"
+            android:textSize="15sp" />
     </LinearLayout>
 </ScrollView>

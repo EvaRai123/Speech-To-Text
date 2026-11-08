@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="8dp" android:background="@drawable/card_background"
+    android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+    <ImageView android:layout_width="64dp" android:layout_height="60dp"
+        android:contentDescription="Planned wearable sensor" android:src="@drawable/illustration_wearable" />
+    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+        android:paddingStart="10dp" android:text="Neck sensor\nWould measure vibration where it sits."
+        android:textColor="@color/ink" android:textSize="16sp" />
+</LinearLayout>

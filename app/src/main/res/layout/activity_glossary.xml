@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measurement Glossary"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Simple explanations of words you may see during practice. A measurement is an estimate from this prototype, not a medical score."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="Recording duration: How long the microphone captured the attempt. It does not show how good the attempt was.\n\nVoice activity duration: How long the sound-level algorithm marked audio as active. It may miss quiet voice or include other sounds, so it is only an estimate.\n\nVoice onset: The estimated start of detected sound activity. It is not a direct measurement of vocal-fold movement.\n\nAcoustic intensity: How strong the sound signal is at the microphone. Phone distance and room conditions affect it; it is not a direct measure of vocal effort.\n\nFundamental frequency (pitch): A signal estimate related to how high or low a voiced sound is. Natural pitch changes are not automatically errors.\n\nAcceleration: A change in movement over time. A neck sensor would measure movement at its own position, not directly see vocal folds.\n\nSignal amplitude: The size of a signal. A larger number does not automatically mean better speaking.\n\nSignal envelope: A smoothed line that shows how a signal rises and falls over time.\n\nSurface EMG: Small electrical signals recorded from muscles beneath skin electrodes. It does not directly measure vocal-fold muscle activity.\n\nEMG envelope: A smoothed summary of how the recorded surface EMG signal changes over time.\n\nSampling frequency: How many times a device records a signal each second.\n\nTimestamp: A time marker attached to a measurement.\n\nSynchronisation: Lining up measurements from different sources by their timing.\n\nBLE: Bluetooth Low Energy, a short-range wireless method planned for sending wearable data. Wearable data is not connected in this version.\n\nSignal quality: An indication of how usable a recording or measurement appears. Poor quality can make estimates unreliable.\n\nBaseline: A person's earlier measurement used as a comparison when the same exercise and similar conditions are used. It is not a clinical target.\n\nMeasurement repeatability: How similar repeated measurements are when the same task is done under similar conditions. Similar numbers do not by themselves mean improvement."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/glossary_learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Back to Learn"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn about speaking"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="3dp"
+            android:text="Choose one short topic. Open it when you are ready."
+            android:textColor="@color/ink"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="A person speaking"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_speaking" />
+
+        <LinearLayout
+            android:id="@+id/learn_topics_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="More to learn"
+            android:textColor="@color/ink"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/learn_dysarthria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="52dp"
+            android:text="Dysarthria"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_how_it_works"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="How SpeechBridge works"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_sensors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="Microphone and planned wearable"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_phonation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="Voice production"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_biofeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="Feedback and measurements"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_glossary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="Measurement glossary"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="Frequently asked questions"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_safety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="Safety and limitations"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_references"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="52dp"
+            android:text="References and further reading"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/learn_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Back to home"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

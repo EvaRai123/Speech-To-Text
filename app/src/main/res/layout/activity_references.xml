@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="References and Further Reading"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="The references below are used as background material for educational explanations. They are intended to support understanding of dysarthria, phonation and physiological measurement, not to claim clinical validation of the prototype."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="1. National Institute on Deafness and Other Communication Disorders (NIDCD). &quot;Voice Disorders&quot;. Relevance: established background on voice production, phonation and clinical voice concerns. Link: https://www.nidcd.nih.gov/health/voice-disorders\n\n2. American Speech-Language-Hearing Association (ASHA). &quot;Dysarthria&quot;. Relevance: general educational overview of dysarthria and motor speech disorders. Link: https://www.asha.org/public/speech/disorders/dysarthria/\n\n3. World Health Organization. &quot;Stroke&quot;. Relevance: background on stroke as a common cause of acquired speech and motor impairments. Link: https://www.who.int/news-room/fact-sheets/detail/stroke\n\n4. National Institute of Neurological Disorders and Stroke (NINDS). &quot;Post-Stroke Rehabilitation&quot;. Relevance: background on neurological rehabilitation and functional recovery after stroke. Link: https://www.ninds.nih.gov/health-information/disorders/stroke\n\n5. Baken, R. J., &amp; Orlikoff, R. F. (2000). Clinical Measurement of Speech and Voice. Relevance: foundational text on acoustic and physiological measurement in voice and speech. Link: https://books.google.com/books/about/Clinical_Measurement_of_Speech_and_Voice.html\n\n6. Titze, I. R. (1994). Principles of Voice Production. Relevance: classic reference for vocal physiology and voice production mechanisms. Link: https://www.researchgate.net/publication/236927228_Principles_of_Voice_Production\n\n7. Reubold, H., &amp; Hammarberg, B. (2017). Voice Disorders and their Management. Relevance: summary of voice assessment and measurement concepts in clinical voice practice. Link: https://www.sciencedirect.com/book/9780128128363/voice-disorders-and-their-management\n\n8. Duffy, J. R. (2020). Motor Speech Disorders: Substrates, Differential Diagnosis, and Management. Relevance: established resource on dysarthria and related motor speech disorders. Link: https://www.elsevier.com/books/motor-speech-disorders/duffy/978-0-323-60967-2"
+            android:textColor="@color/ink"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/references_learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Back to Learn"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/card_background"
+            android:padding="18dp"
+            android:text="What is SpeechBridge? A learning and practice app connected to an engineering research project. It can show measurements from phone recordings.\n\nWho is it for? It is being developed for guided phonation practice in the context of post-stroke dysarthria. It is not a validated clinical system.\n\nWhat is dysarthria? A speech difficulty related to how the nervous system controls speaking muscles.\n\nWhy practise phonation? Phonation means making voice. Some app exercises let you practise a comfortable voice sound and review its recording.\n\nWhy use an accelerometer? A future sensor on the neck could detect vibration where it touches the skin. It does not directly measure vocal-fold movement, and it is not connected yet.\n\nWhy use EMG? Surface EMG uses skin electrodes to record small electrical signals from muscles beneath them. It does not directly measure vocal-fold muscle activity, and it is not connected yet.\n\nWhy is a microphone needed? The phone microphone records sound. The app uses that recording to estimate sound activity and signal features.\n\nWhy plan to use more than one sensor? Each sensor detects a different kind of signal. The project is investigating whether extra information is useful; more sensors do not guarantee better feedback.\n\nWhat is the ESP32-S3? A small controller planned for collecting readings from the future wearable. It is not connected in this app version.\n\nWhat is BLE? Bluetooth Low Energy, a way devices can send small amounts of information wirelessly. Wearable data is not being sent in this version.\n\nDo I need a wearable? No. The learning screens and phone-microphone practice can be used without one. Wearable readings are unavailable.\n\nWhat if a sensor disconnects? The app should identify the reading as unavailable, not invent a value. No wearable connection is implemented here.\n\nWhat is a personal baseline? An earlier measurement from your own similar exercise, used only for context. It is not a target or medical standard.\n\nWhat do results mean? They are estimates from a prototype recording and can be affected by the room, phone, and recording quality.\n\nCan SpeechBridge diagnose dysarthria? No.\n\nCan it replace a speech-language therapist? No. It cannot provide personal assessment or treatment.\n\nIs SpeechBridge clinically validated? No. It is an engineering research prototype, not a clinically validated medical device."
+            android:textColor="@color/ink"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/faq_learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Back to Learn"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

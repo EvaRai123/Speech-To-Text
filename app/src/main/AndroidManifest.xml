@@ -2,7 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +34,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".PracticeActivity" />
+        <activity android:name=".PracticeListActivity" />
+        <activity android:name=".PracticeExerciseActivity" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".LearnActivity" />
+        <activity android:name=".ResearchWorkspaceActivity" />
+        <activity android:name=".CurriculumActivity" />
+        <activity android:name=".AreaLessonsActivity" />
+        <activity android:name=".LessonActivity" />
+        <activity android:name=".ProgressDashboardActivity" />
+        <activity android:name=".DysarthriaActivity" />
+        <activity android:name=".HowSpeechBridgeWorksActivity" />
+        <activity android:name=".SensorsActivity" />
+        <activity android:name=".PhonationActivity" />
+        <activity android:name=".BiofeedbackActivity" />
+        <activity android:name=".GlossaryActivity" />
+        <activity android:name=".FaqActivity" />
+        <activity android:name=".SafetyActivity" />
+        <activity android:name=".ReferencesActivity" />
     </application>
 
 </manifest>
